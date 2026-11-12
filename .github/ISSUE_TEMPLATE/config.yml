@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 一般讨论
+    url: https://github.com/standup-coder/the-lost-coder/discussions
+    about: 对结构、立论、写作方向的想法与闲聊

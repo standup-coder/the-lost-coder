@@ -1,0 +1,52 @@
+name: 亲历故事
+description: 分享你的程序员行业亲历，可能（匿名）写进本书
+title: "[故事] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢愿意分享。本书的承诺：默认匿名、特征泛化；引用稿先经你确认；可随时要求撤回。
+        关键决策、真实数字（花费/薪资/时长）、当时相信了什么、现在怎么看——这些最宝贵。
+  - type: dropdown
+    id: identity
+    attributes:
+      label: 你最接近哪类身份
+      options:
+        - 培训班学员/毕业生
+        - 计算机专业学生
+        - 大厂程序员
+        - 中小厂/创业公司程序员
+        - 外包/驻场
+        - 二三线/县城程序员
+        - 独立开发者/爱好者
+        - 高校教师
+        - HR/管理者
+        - 已离开行业
+        - 其他（请在正文说明）
+    validations:
+      required: true
+  - type: input
+    id: era
+    attributes:
+      label: 入行/相关年份
+      placeholder: 例如 2015-2021
+  - type: input
+    id: region
+    attributes:
+      label: 地区
+      placeholder: 城市或城市级别（如 强二线 / 县城）
+  - type: textarea
+    id: story
+    attributes:
+      label: 你的经历
+      description: 长短不限，具体比完整重要
+    validations:
+      required: true
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: 授权确认
+      options:
+        - label: 我同意本书在匿名化、特征泛化后引用本故事，引用稿会先经我确认
+    validations:
+      required: true

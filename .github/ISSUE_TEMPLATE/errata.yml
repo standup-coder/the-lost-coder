@@ -1,0 +1,25 @@
+name: 事实勘误
+description: 指出书中数据、事实或引用的错误
+title: "[勘误] "
+body:
+  - type: input
+    id: location
+    attributes:
+      label: 章节位置
+      placeholder: 例：第五章 / 序章第 3 节
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: 原文表述
+      description: 复制有问题的句子
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: 正确表述与依据
+      description: 附来源链接；数据类勘误请注明年份与口径
+    validations:
+      required: true
